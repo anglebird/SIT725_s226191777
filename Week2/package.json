@@ -1,0 +1,24 @@
+{
+  "name": "sit725_s226191777",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/anglebird/SIT725_s226191777#readme",
+  "bugs": {
+    "url": "https://github.com/anglebird/SIT725_s226191777/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anglebird/SIT725_s226191777.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  
+  "scripts": {
+    "start": "node server.js"
+  }
+}
+
+
+  
