@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BMI Calculator</title>
+
+  <meta name="description" content="BMI Calculator Web Application with MongoDB for SIT725">
+  <meta name="author" content="Gujun Lu">
+
+  <meta property="og:title" content="BMI Calculator">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="A BMI Calculator web app using Express, MongoDB and Materialize">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper teal">
+      <div class="container">
+        <a href="#" class="brand-logo">BMI App</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-body">
+    <div class="container">
+
+      <div class="row">
+        <div class="col s12 center-align">
+          <h2 id="heading">BMI Calculator</h2>
+          <p class="flow-text">
+            Enter your height and weight to calculate your Body Mass Index.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="card">
+            <div class="card-content">
+
+              <span class="card-title center-align">Health Check</span>
+
+              <div class="input-field">
+                <input id="height" type="number" min="1" step="0.1">
+                <label for="height">Height (cm)</label>
+              </div>
+
+              <div class="input-field">
+                <input id="weight" type="number" min="1" step="0.1">
+                <label for="weight">Weight (kg)</label>
+              </div>
+
+              <div class="center-align" style="margin-top: 20px;">
+                <a class="waves-effect waves-light btn teal" id="calculateBtn">
+                  <i class="material-icons left">calculate</i>
+                  Calculate BMI
+                </a>
+
+                <a class="waves-effect waves-light btn orange" id="historyBtn" style="margin-left: 10px;">
+                  <i class="material-icons left">history</i>
+                  Show History
+                </a>
+              </div>
+
+            </div>
+
+            <div class="card-content">
+              <h5>Result</h5>
+              <p id="result">Your BMI result will appear here.</p>
+              <p id="status"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- History section -->
+      <div class="row">
+        <div class="col s12 m10 offset-m1">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title center-align">BMI History Records</span>
+              <ul class="collection" id="historyList">
+                <li class="collection-item">No records yet.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="images/Underweight.png" alt="Underweight">
+            </div>
+            <div class="card-content center-align">
+              <span class="card-title">Underweight</span>
+              <p>BMI below 18.5</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="images/Normal.png" alt="Normal">
+            </div>
+            <div class="card-content center-align">
+              <span class="card-title">Normal</span>
+              <p>BMI 18.5 - 24.9</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="images/Overweight.png" alt="Overweight">
+            </div>
+            <div class="card-content center-align">
+              <span class="card-title">Overweight</span>
+              <p>BMI 25+</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>

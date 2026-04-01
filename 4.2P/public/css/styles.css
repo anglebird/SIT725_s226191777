@@ -1,0 +1,77 @@
+/* navbar */
+.navbar-size {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* page background */
+body {
+    background: linear-gradient(to right, #e0f7fa, #e8f5e9);
+    font-family: Arial, sans-serif;
+}
+
+/* remove default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* remove spacing for navbar elements */
+nav, .nav-wrapper, .brand-logo, .right {
+    margin: 0;
+    padding: 0;
+}
+
+/* main content spacing */
+.main-body {
+    margin-top: 30px;
+}
+
+/* heading style */
+#heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* card style */
+.card {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* input spacing */
+.input-field input {
+    margin-bottom: 10px;
+}
+
+/* button style */
+.btn {
+    border-radius: 25px;
+}
+
+/* result text */
+#result {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #00796b;
+}
+
+/* status text */
+#status {
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+/* demo image (if used) */
+.materialboxed-image {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* card images */
+.card-image img {
+    height: 500px;
+    object-fit: cover;
+}
